@@ -1,17 +1,19 @@
 * {
 	padding: 0;
 	margin: 0;
+	box-sizing:border-box;
 }
 
 body {
 	font-family: Helvetica, Arial, Sans-Serif;
 }
 
-header {
+#splash {
 	background: url("images/header_image.jpg");
 	background-size: cover;
 	background-position: center center;
 	text-align: center;
+	height: 90vh;
 }
 
 nav a {
@@ -22,6 +24,7 @@ nav a {
 
 nav {
 	padding: 20px;
+	float: right;
 }
 
 #nav_bar {
@@ -37,7 +40,6 @@ h1 {
 	font-size: 60px;
 	font-family: "Times New Roman", Serif;
 	letter-spacing: 2px;
-	margin-top: 20px;
 	text-shadow:
 		-1px -1px 0 #000,
 		1px -1px 0 #000,
@@ -60,7 +62,7 @@ h1, #slogan {
 }
 
 main {
-	padding: 30px;
+	/* padding: 30px; */
 }
 
 #services {
@@ -88,6 +90,7 @@ ul {
 	line-height: 1.5;
 }
 
+<<<<<<< HEAD
 footer {
 	padding: 20px;
 	text-align: center;
@@ -95,3 +98,12 @@ footer {
 	left: 0;
 	right: 0;
 }
+=======
+header img {width: 10em;float: left;}
+
+footer {
+	padding: 20px;
+	text-align: center;
+	background-color: rgba(0,0,0,.5);
+}
+>>>>>>> origin/master
