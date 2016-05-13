@@ -1,0 +1,149 @@
+@font-face {
+	font-family: 'Honey';
+	src: url("fonts/Honey_Script_Light.ttf");
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Avenir Next Condensed', Arial, sans-serif;
+	font-size: 20px;
+}
+
+#logo {
+	float: left;
+	width: 8em;
+	padding: .5em;
+}
+
+nav {
+	float: right;
+	margin: .5em;
+}
+
+nav a {
+	padding: 1em;
+}
+
+header {
+	background: url("../images/mountains_header.jpg");
+	background-size: cover;
+	background-position: center center;
+	text-align: center;
+	height: 100vh;
+}
+
+h1 {
+	font-family: Honey, cursive;
+	font-size: 8em;
+}
+
+#header_text {
+	padding: 40vh 0;
+	line-height: .7;
+}
+
+#header_text p {
+	font-size: 1.5em;
+}
+
+a {
+	color: #58585b;
+	text-decoration: none;
+}
+
+a:hover {
+	color: black;
+}
+
+#slogan {
+	width: 100%;
+}
+
+#main {
+	width: 100%
+	float: left;
+}
+
+.text_square {
+	width: 50%;
+	padding: 2em 1.5em;
+	float: left;
+}
+
+.text_square p {
+	margin: 1em;
+	max-width: 25em;
+}
+
+.square {
+	width: 50%;
+	float: left;
+}
+
+h2 {
+	font-family: Honey, Arial;
+	font-size: 3.5em;
+	text-align: center;
+}
+
+hr {
+	width: 100%;
+	border: none;
+	height: 3px;
+	background-color: #c5dbff;
+	margin: .2em 0;
+}
+
+.portfolio {
+	margin-bottom: 40px;
+}
+
+.h2_center {
+	padding: .4em;
+}
+
+.small_square {
+	float: left;
+	padding: 0 15%;
+}
+
+.small_square img {
+	width: 24%;
+	margin: .2% .3%;
+}
+
+.cta {
+	text-align: center;
+}
+
+.cta a {
+	padding: 5px 20px;
+}
+
+#whats_next h2 {
+	padding-bottom: .2em;
+}
+
+#whats_next {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#social {
+	float: left;
+	padding: 10px 38%;
+}
+
+#social img {
+	width: 16%;
+	margin: 1%;
+}
+
+/*footer a {
+	float: right;
+}*/
