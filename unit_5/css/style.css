@@ -162,21 +162,19 @@ hr {
 	padding: 0 1%;
 }
 
-footer {
+#footer_nav {
 	width: 100%;
 	background: rgba(255,255,255,.7);
 	position: fixed;
 	bottom: 0;
+	margin: 0;
+	float: none;
 }
 
-/*#scroll_to_top {
-	position: absolute;
-}*/
-
-/*#scroll_to_top a {
-	bottom: 10px;
-	right: 10px;
-}*/
+#scroll_to_top {
+	float: right;
+	padding: 12px 6px;
+}
 
 #end_space {
 	height: 60px;
