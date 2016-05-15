@@ -124,7 +124,6 @@ hr {
 
 .cta {
 	text-align: center;
-	padding: .8em 0 0;
 }
 
 #portfolio_cta:before {
@@ -135,6 +134,12 @@ hr {
 	visibility: hidden;
 	height: 0;
 }
+
+#portfolio_cta a {
+	display: block;
+	margin-top: .8em;
+}
+
 
 #whats_next h2 {
 	padding-bottom: .2em;
