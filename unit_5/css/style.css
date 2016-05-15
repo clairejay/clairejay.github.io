@@ -1,0 +1,178 @@
+@font-face {
+	font-family: 'Honey';
+	src: url("fonts/Honey_Script_Light.ttf");
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Avenir Next Condensed', Arial, sans-serif;
+	font-size: 20px;
+}
+
+#logo {
+	float: left;
+	width: 8em;
+	padding: .5em;
+}
+
+nav {
+	float: right;
+	margin: .5em;
+}
+
+nav a {
+	color: #58585b;
+	padding: 1em;
+}
+
+header {
+	background: url("../images/mountains_header.jpg");
+	background-size: cover;
+	background-position: center center;
+	text-align: center;
+	height: 100vh;
+}
+
+h1 {
+	font-family: Honey, cursive;
+	font-size: 8em;
+}
+
+#header_text {
+	padding: 40vh 0;
+	line-height: .7;
+}
+
+#header_text p {
+	font-size: 1.5em;
+}
+
+a {
+	color: #969698;
+	text-decoration: none;
+}
+
+a:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+#slogan {
+	width: 100%;
+}
+
+.large_squares {
+	width: 100%;
+}
+
+#about,#about_img,#services_img,#services {
+	width: 49.8%;
+	display: inline-block;
+}
+
+#about p,#services p {
+	margin: 1em;
+	max-width: 25em;
+	min-width: 20em;
+}
+/*
+#about, #services {
+	margin: 0 auto;
+}*/
+
+#about_content, #about_services {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+h2 {
+	font-family: Honey, Arial;
+	font-size: 3.5em;
+	text-align: center;
+}
+
+hr {
+	width: 100%;
+	border: none;
+	height: 3px;
+	background-color: #c5dbff;
+	margin: .2em 0;
+}
+
+.portfolio {
+	margin-bottom: 40px;
+}
+
+.h2_center {
+	padding: .4em;
+}
+
+.small_square {
+	float: left;
+	padding: 0 15%;
+}
+
+.small_square img {
+	width: 24%;
+	margin: .2% .3%;
+}
+
+.cta {
+	text-align: center;
+	padding: .8em 0 0;
+}
+
+#portfolio_cta:before {
+	display: block;
+	content:" ";
+	clear: both;
+	font-size: 0;
+	visibility: hidden;
+	height: 0;
+}
+
+#whats_next h2 {
+	padding-bottom: .2em;
+}
+
+#whats_next {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#social {
+	padding: 5px 0 0;
+	width: 15%;
+	margin: 0 auto;
+	width: 280px;
+}
+
+#social img {
+	width: 18%;
+	padding: 0 1%;
+}
+
+footer {
+	width: 100%;
+	background: rgba(255,255,255,.7);
+	position: fixed;
+	bottom: 0;
+}
+
+/*#scroll_to_top {
+	position: absolute;
+}*/
+
+/*#scroll_to_top a {
+	bottom: 10px;
+	right: 10px;
+}*/
+
+#end_space {
+	height: 60px;
+}
