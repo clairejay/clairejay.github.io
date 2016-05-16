@@ -40,16 +40,6 @@ nav a {
 	padding: 1em;
 }
 
-a {
-	color: #969698;
-	text-decoration: none;
-}
-
-a:hover {
-	color: black;
-	text-decoration: underline;
-}
-
 header {
 	background: url("../images/mountains_header.jpg");
 	background-size: cover;
@@ -72,26 +62,42 @@ h1 {
 	font-size: 1.5em;
 }
 
-#about, #services {
-	width: 48.9%;
-	display: inline;
+a {
+	color: #969698;
+	text-decoration: none;
 }
 
-#about_content, #services_content {
-	width: 49.8%;
-	height: 49.8vw;
-	padding: 2em 1em;
+a:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+#slogan {
+	width: 100%;
 }
 
 .large_squares {
-	width: 49.8%;
-	display: inline;
+	width: 100%;
 }
 
-#about p, #services p {
-	margin: 1em auto;
+#about,#about_img,#services_img,#services {
+	width: 49.8%;
+	display: inline-block;
+}
+
+#about p,#services p {
+	margin: 1em;
 	max-width: 25em;
 	min-width: 20em;
+}
+/*
+#about, #services {
+	margin: 0 auto;
+}*/
+
+#about_content, #about_services {
+	display: table-cell;
+	vertical-align: middle;
 }
 
 h2 {
@@ -143,6 +149,7 @@ hr {
 	display: block;
 	margin-top: .8em;
 }
+
 
 #whats_next h2 {
 	padding-bottom: .2em;
