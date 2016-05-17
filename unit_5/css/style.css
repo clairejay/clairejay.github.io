@@ -8,7 +8,13 @@
 	margin: 0;
 	box-sizing: border-box;
 }
-/*
+
+
+/*header, nav, div, section {
+	border: 1px solid black;
+	padding: 20px;
+}
+
 header {
 	background: #ffed74;
 }
@@ -17,8 +23,8 @@ nav {
 }
 div,section {
 	background: #ffe2b8;
-}
-*/
+}*/
+
 body {
 	font-family: 'Avenir Next Condensed', Arial, sans-serif;
 	font-size: 20px;
