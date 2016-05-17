@@ -72,23 +72,28 @@ h1 {
 	font-size: 1.5em;
 }
 
-#about, #services {text-align: center;}
-
-#about_content, #services_content {
-	width: 49.8%;
-	height: 49.8vw;
-	padding: 2em 1em;
+#about, #services {
+	text-align: center;
 }
 
-.large_squares {
-	/* display: inline; */
+#services div, #about div {
+	padding: 2em 1em;
+	width: 50%;
+}
+
+#about div{
+	float: left;
+}
+
+#services div{
+	float: right;
 }
 
 #about p, #services p {
-	/* margin: 1em auto; */
-	/* max-width: 25em; */
-	/* min-width: 20em; */
-	margin: 1em 0;
+	text-align: left;
+	margin: 1em auto; 
+	max-width: 25em; 
+	min-width: 20em;
 }
 
 h2 {
@@ -97,35 +102,17 @@ h2 {
 	text-align: center;
 }
 
-hr {
-	width: 100%;
-	border: none;
-	height: 3px;
-	background-color: #c5dbff;
-	margin: .2em 0;
+#about_img {
+	float: right;
+	width: 50%;
 }
 
-.portfolio {
-	margin-bottom: 40px;
-}
-
-.h2_center {
-	padding: .4em;
-}
-
-.small_square {width: 1200px;margin: auto;}
-
-.small_square img {
-	width: 25%;
+#services_img {
 	float: left;
-	padding: .25em;
+	width: 50%;
 }
 
-.cta {
-	text-align: center;
-}
-
-#portfolio_cta:before {
+#about:after, #services:after{
 	display: block;
 	content:" ";
 	clear: both;
@@ -134,9 +121,48 @@ hr {
 	height: 0;
 }
 
-#portfolio_cta a {
+#services {
+	padding-bottom: 5px;
+	border-bottom: 12px double #c5dbff;
+}
+
+.h2_center {
+	padding: .5em 0 .3em;
+}
+
+.portfolio {
+	width: 100%;
+}
+
+.small_square {
+	width: 75%;
+	margin: auto;
+}
+
+.small_square img {
+	width: 25%;
+	float: left;
+	padding: .25em;
+}
+
+.portfolio a {
+	display: inline-block;
+	padding: 1em;
+	margin-bottom: 1.5em;
+}
+
+.small_square:after, .portfolio:after {
 	display: block;
-	margin-top: .8em;
+	content:" ";
+	clear: both;
+	font-size: 0;
+	visibility: hidden;
+	height: 0;
+}
+
+.portfolio {
+	border-bottom: 12px double #c5dbff;
+	text-align: center;
 }
 
 #whats_next h2 {
@@ -145,19 +171,12 @@ hr {
 
 #whats_next {
 	text-align: center;
-	margin-bottom: 40px;
+	margin-bottom: 2.5em;
 }
 
-#social {
-	padding: 5px 0 0;
-	width: 15%;
-	margin: 0 auto;
-	width: 280px;
-}
-
-#social img {
-	width: 18%;
-	padding: 0 1%;
+#footer_nav a {
+	float: right;
+	padding: 8px 25px 0;
 }
 
 #footer_nav {
@@ -166,14 +185,28 @@ hr {
 	position: fixed;
 	bottom: 0;
 	margin: 0;
-	float: none;
 }
 
-#scroll_to_top {
-	float: right;
-	padding: 12px 6px;
+#social {
+	width: 360px;
+	height: 20px;
+	margin: 0 auto;
+	padding-top: 5px;
+}
+
+#social img {
+	width: 36px;
+}
+
+#social a, #social img {
+	margin: 0;
+}
+
+#social a {
+	padding: 0 18px;
 }
 
 #end_space {
-	height: 60px;
+	height: 70px;
+	border-top: 12px double #c5dbff;
 }
