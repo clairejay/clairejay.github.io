@@ -50,7 +50,7 @@ a:hover {
 	text-decoration: underline;
 }
 
-header {
+#splash {
 	background: url("../images/mountains_header.jpg");
 	background-size: cover;
 	background-position: center center;
@@ -72,10 +72,7 @@ h1 {
 	font-size: 1.5em;
 }
 
-#about, #services {
-	width: 48.9%;
-	display: inline;
-}
+#about, #services {text-align: center;}
 
 #about_content, #services_content {
 	width: 49.8%;
@@ -84,14 +81,14 @@ h1 {
 }
 
 .large_squares {
-	width: 49.8%;
-	display: inline;
+	/* display: inline; */
 }
 
 #about p, #services p {
-	margin: 1em auto;
-	max-width: 25em;
-	min-width: 20em;
+	/* margin: 1em auto; */
+	/* max-width: 25em; */
+	/* min-width: 20em; */
+	margin: 1em 0;
 }
 
 h2 {
@@ -116,14 +113,12 @@ hr {
 	padding: .4em;
 }
 
-.small_square {
-	float: left;
-	padding: 0 15%;
-}
+.small_square {width: 1200px;margin: auto;}
 
 .small_square img {
-	width: 24%;
-	margin: .2% .3%;
+	width: 25%;
+	float: left;
+	padding: .25em;
 }
 
 .cta {
