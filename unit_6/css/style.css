@@ -1,0 +1,262 @@
+@font-face {
+	font-family: 'Honey';
+	src: url("fonts/Honey_Script_Light.ttf");
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+/*header, nav, div, section {
+	border: 1px solid black;
+	padding: 20px;
+}
+
+header {
+	background: #ffed74;
+}
+nav {
+	background: #e8c66a;
+}
+div,section {
+	background: #ffe2b8;
+}*/
+
+body {
+	font-family: 'Avenir Next Condensed', Arial, sans-serif;
+	font-size: 20px;
+	color: #333;
+}
+
+#logo {
+	float: left;
+	width: 9em;
+	padding: 0 1em;
+}
+
+/*nav {
+	float: right;
+	margin: .5em;
+}
+
+nav a {
+	color: #58585b;
+	padding: 1em;
+}*/
+
+a {
+	color: #969698;
+	text-decoration: none;
+}
+
+a:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+#splash {
+	background: url("../images/mountains_header.jpg");
+	background-size: cover;
+	background-position: center center;
+	text-align: center;
+	height: 100vh;
+	color: black;
+}
+
+#splash img {
+	width: 25em;
+	margin-bottom: .7em;
+}
+
+h1 {
+	font-family: Honey, cursive;
+	font-size: 8em;
+}
+
+#header_text {
+	padding: 40vh 0;
+	line-height: .7;
+}
+
+#header_text p {
+	font-size: 1.5em;
+}
+
+#about, #services {
+	position: relative;
+	text-align: center;
+}
+
+#about div {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#services div {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%);
+}
+
+#services div, #about div {
+	padding: 2em 1em;
+	width: 50%;
+}
+
+/*#services div{
+	float: right;
+}*/
+
+#about p, #services p {
+	text-align: left;
+	margin: 1em auto; 
+	max-width: 25em; 
+	min-width: 20em;
+}
+
+h2 {
+	font-family: Honey, Arial;
+	font-size: 3.5em;
+	text-align: center;
+}
+
+#about_img {
+	float: right;
+	width: 50%;
+}
+
+#services_img {
+	float: left;
+	width: 50%;
+}
+
+#about:after, #services:after{
+	display: block;
+	content:" ";
+	clear: both;
+	font-size: 0;
+	visibility: hidden;
+	height: 0;
+}
+
+#services {
+	padding-bottom: 5px;
+	border-bottom: 12px double #c5dbff;
+}
+
+.h2_center {
+	padding: .5em 0 .6em;
+}
+
+.portfolio {
+	width: 100%;
+	margin: 5em 0;
+}
+
+.small_square {
+	width: 75%;
+	margin: 0 auto 10em;
+}
+
+.small_square img {
+	width: 25%;
+	float: left;
+	padding: .25em;
+}
+
+/*.portfolio a {
+	display: inline-block;
+	padding: 1em;
+	margin-bottom: 1.5em;
+}*/
+
+.small_square:after, .portfolio:after {
+	display: block;
+	content:" ";
+	clear: both;
+	font-size: 0;
+	visibility: hidden;
+	height: 0;
+}
+
+.portfolio {
+	border-bottom: 12px double #c5dbff;
+	text-align: center;
+}
+
+#whats_next h2 {
+	padding-bottom: .2em;
+}
+
+#whats_next {
+	text-align: center;
+	margin-bottom: 7em;
+	line-height: 1.5em;
+}
+
+#whats_next h2 {
+	margin-bottom: .5em;
+}
+
+#email {
+	margin-top: 1.5em;
+}
+
+#linkedin {
+	display: block;
+	margin-top: .8em;
+}
+
+#end_space {
+	height: 60px;
+	background: #c5dbff;
+}
+
+footer a {
+	float: right;
+	padding: 16px 20px;
+	color: #555;
+}
+
+/*#footer_nav a {
+	float: right;
+	padding: 8px 25px 0;
+}
+
+#footer_nav {
+	width: 100%;
+	background: rgba(255,255,255,.7);
+	position: fixed;
+	bottom: 0;
+	margin: 0;
+}
+
+#social {
+	width: 360px;
+	height: 20px;
+	margin: 0 auto;
+	padding-top: 5px;
+}
+
+#social img {
+	width: 36px;
+}
+
+#social a, #social img {
+	margin: 0;
+}
+
+#social a {
+	padding: 0 18px;
+}
+
+#end_space {
+	height: 70px;
+	border-top: 12px double #c5dbff;
+}
+*/
