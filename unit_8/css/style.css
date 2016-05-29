@@ -9,6 +9,22 @@
 	box-sizing: border-box;
 }
 
+
+/*header, nav, div, section {
+	border: 1px solid black;
+	padding: 20px;
+}
+
+header {
+	background: #ffed74;
+}
+nav {
+	background: #e8c66a;
+}
+div,section {
+	background: #ffe2b8;
+}*/
+
 body {
 	font-family: 'Avenir Next Condensed', Arial, sans-serif;
 	font-size: 20px;
@@ -20,6 +36,16 @@ body {
 	width: 9em;
 	padding: 0 1em;
 }
+
+/*nav {
+	float: right;
+	margin: .5em;
+}
+
+nav a {
+	color: #58585b;
+	padding: 1em;
+}*/
 
 a {
 	color: #969698;
@@ -83,6 +109,10 @@ a:hover {
 	width: 50%;
 }
 
+/*#services div{
+	float: right;
+}*/
+
 #about p, #services p {
 	text-align: left;
 	margin: 1em auto; 
@@ -139,6 +169,12 @@ h2 {
 	float: left;
 	padding: .25em;
 }
+
+/*.portfolio a {
+	display: inline-block;
+	padding: 1em;
+	margin-bottom: 1.5em;
+}*/
 
 .small_square:after, .portfolio:after {
 	display: block;
@@ -280,3 +316,41 @@ footer a {
 		padding: 2em 1em;
 	}
 }
+
+/*#footer_nav a {
+	float: right;
+	padding: 8px 25px 0;
+}
+
+#footer_nav {
+	width: 100%;
+	background: rgba(255,255,255,.7);
+	position: fixed;
+	bottom: 0;
+	margin: 0;
+}
+
+#social {
+	width: 360px;
+	height: 20px;
+	margin: 0 auto;
+	padding-top: 5px;
+}
+
+#social img {
+	width: 36px;
+}
+
+#social a, #social img {
+	margin: 0;
+}
+
+#social a {
+	padding: 0 18px;
+}
+
+#end_space {
+	height: 70px;
+	border-top: 12px double #c5dbff;
+}
+*/
