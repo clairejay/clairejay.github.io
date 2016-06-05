@@ -19,6 +19,17 @@ body {
 	float: left;
 	width: 9em;
 	padding: 0 1em;
+	visibility: hidden;
+}
+
+nav {
+	float: right;
+	margin: .5em;
+}
+
+nav a {
+	color: #58585b;
+	padding: 1em;
 }
 
 a {
@@ -54,7 +65,7 @@ a:hover {
 	font-size: 1.5em;
 }
 
-#about, #services {
+#about, #skills {
 	position: relative;
 	text-align: center;
 }
@@ -68,7 +79,7 @@ a:hover {
 	transform: translateY(-50%);
 }
 
-#services div {
+#skills div {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -78,12 +89,16 @@ a:hover {
 	transform: translateY(-50%);
 }
 
-#services div, #about div {
+#about div, #skills div {
 	padding: 2em 1em;
 	width: 50%;
 }
 
-#about p, #services p {
+/*#services div{
+	float: right;
+}*/
+
+#about p, #skills p {
 	text-align: left;
 	margin: 1em auto; 
 	max-width: 25em; 
@@ -101,12 +116,12 @@ h2 {
 	width: 50%;
 }
 
-#services_img {
+#skills_img {
 	float: left;
 	width: 50%;
 }
 
-#about:after, #services:after{
+#about:after, #skills:after{
 	display: block;
 	content:" ";
 	clear: both;
@@ -115,16 +130,16 @@ h2 {
 	height: 0;
 }
 
-#services {
+#skills {
 	padding-bottom: 5px;
 	border-bottom: 12px double #c5dbff;
 }
 
-.h2_center {
+#contact h2, #photography h2 {
 	padding: .5em 0 .6em;
 }
 
-.portfolio {
+#photography {
 	width: 100%;
 	margin: 5em 0;
 }
@@ -140,7 +155,13 @@ h2 {
 	padding: .25em;
 }
 
-.small_square:after, .portfolio:after {
+/*.portfolio a {
+	display: inline-block;
+	padding: 1em;
+	margin-bottom: 1.5em;
+}*/
+
+.small_square:after, #photography:after {
 	display: block;
 	content:" ";
 	clear: both;
@@ -149,23 +170,20 @@ h2 {
 	height: 0;
 }
 
-.portfolio {
+#photography {
 	border-bottom: 12px double #c5dbff;
 	text-align: center;
 }
 
-#whats_next h2 {
+#contact h2 {
 	padding-bottom: .2em;
-}
-
-#whats_next {
-	text-align: center;
-	margin-bottom: 7em;
-	line-height: 1.5em;
-}
-
-#whats_next h2 {
 	margin-bottom: .5em;
+}
+
+#contact {
+	text-align: center;
+	margin-bottom: 5em;
+	line-height: 1.5em;
 }
 
 #email {
@@ -177,15 +195,28 @@ h2 {
 	margin-top: .8em;
 }
 
-#end_space {
-	height: 60px;
-	background: #c5dbff;
+#scroll_to_top {
+	height: 40px;
+	width: 100%;
+	background: rgba(197,219,255,.6);
+	position: fixed;
+	bottom: 0;
+	margin: 0;
 }
 
-footer a {
+#scroll_to_top a {
 	float: right;
-	padding: 16px 20px;
-	color: #555;
+	padding: 6px 20px;
+	color: #2e2e30;
+}
+
+#scroll_to_top a:hover {
+	color: #000;
+	}
+
+#end_space {
+	height: 40px;
+	background-color: #c5dbff;
 }
 
 @media only screen and (max-width: 1250px) {
@@ -201,12 +232,12 @@ footer a {
 	p {
 		font-size: 1em;
 	}
-	#services, #about {
+	#about, #skills {
 		width: 700px;
 		margin: 0 auto;
 		position: static;
 	}
-	#services div, #about div {
+	#about div, #skills div {
 		width: 100%;
 		padding: 4em 2em;
 		float: none;
@@ -217,13 +248,13 @@ footer a {
 		-o-transform: none;
 		transform: none;
 	}
-	#about_img, #services_img {
+	#about_img, #skills_img {
 		float: none;
 		display: block;
 		width: 100%;
 		position: static;
 	}
-	#services {
+	#skills {
 		border-bottom: none;
 	}
 	.small_square {
@@ -246,10 +277,10 @@ footer a {
 }
 
 @media only screen and (max-width: 700px) {
-	#about, #services {
+	#about, #skills {
 		width: 100%;
 	}
-	#about p, #services p {
+	#about p, #skills p {
 		font-size: .9em;
 	}
 	#header_text img {
@@ -270,13 +301,51 @@ footer a {
 	#header_text img {
 		width: 340px;
 	}
-	#about p, #services p {
+	#about p, #skills p {
 		font-size: .8em;
 	}
-	#about h2, #services h2 {
+	h2 {
 		font-size: 2.9em;
 	}
-	#services div, #about div {
+	#about div, #skills div {
 		padding: 2em 1em;
 	}
 }
+
+/*#footer_nav a {
+	float: right;
+	padding: 8px 25px 0;
+}
+
+#footer_nav {
+	width: 100%;
+	background: rgba(255,255,255,.7);
+	position: fixed;
+	bottom: 0;
+	margin: 0;
+}
+
+#social {
+	width: 360px;
+	height: 20px;
+	margin: 0 auto;
+	padding-top: 5px;
+}
+
+#social img {
+	width: 36px;
+}
+
+#social a, #social img {
+	margin: 0;
+}
+
+#social a {
+	padding: 0 18px;
+}
+
+#end_space {
+	height: 70px;
+	border-top: 12px double #c5dbff;
+}
+*/
