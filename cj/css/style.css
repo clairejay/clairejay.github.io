@@ -296,7 +296,7 @@ h2 {
 
 @media only screen and (max-width: 550px) {
 	nav a {
-		padding: 1em 1em;
+		padding: 1em .7em;
 	}
 	nav {
 		margin: .5em 0;
