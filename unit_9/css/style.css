@@ -22,7 +22,7 @@ body {
 	visibility: hidden;
 }
 
-nav {
+#top_nav {
 	float: right;
 	margin: .5em;
 }
@@ -214,9 +214,17 @@ h2 {
 	color: #000;
 	}
 
+#scroll_to_top nav {
+	visibility: hidden;
+}
+
 #end_space {
 	height: 40px;
 	background-color: #c5dbff;
+}
+
+#hamburger {
+	display: none;
 }
 
 @media only screen and (max-width: 1250px) {
@@ -295,12 +303,6 @@ h2 {
 }
 
 @media only screen and (max-width: 550px) {
-	nav a {
-		padding: 1em .5em;
-	}
-	nav {
-		margin: 0;
-	}
 	#header_text p {
 		font-size: 1em;
 	}
@@ -316,6 +318,56 @@ h2 {
 	#about div, #skills div {
 		padding: 2em 1em;
 	}
+}
+
+@media only screen and (max-width: 430px) {
+	header nav {
+		visibility: hidden;
+	}
+	#header_text {
+		padding-top: 30vh;
+	}
+	#contact {
+		margin-bottom: 19em;
+	}
+	#scroll_to_top {
+		height: 60px;
+		background: rgba(197,219,255,.8);
+	}
+	#scroll_to_top a {
+		display: none;
+	}
+	#end_space {
+		background-color: #fff;
+	}
+	#hamburger {
+		width: 100%;
+		display: block;
+		position: fixed;
+		bottom: 0;
+		margin: 0;
+		border-top: 2px solid #839abf;
+	}
+	#hamburger a {
+		display: block;
+		text-align: center;
+		padding-top: .7em;
+		padding-bottom: .7em; 
+	}
+	#hamburger a:hover {
+		text-decoration: none;
+	}
+	.dark_link {
+		background-color: #c5dbff;
+		opacity: .9;
+	}
+	.light_link {
+		background-color: #d9e7ff;
+	}
+	#hamburger img {
+		width: 1.1em
+	}
+
 }
 
 /*#footer_nav a {
