@@ -46,6 +46,7 @@ a:hover {
 	background: url("../images/mountains_header.jpg");
 	background-size: cover;
 	background-position: center center;
+	background-attachment: fixed;
 	text-align: center;
 	height: 100vh;
 	color: black;
