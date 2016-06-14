@@ -5,7 +5,6 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<!--<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>-->
 	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
 	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
 	<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
@@ -19,7 +18,7 @@
 <body>
 	<header>
 		<img id="logo" src="images/cj_logo.png" alt="Claire James Logo" title="CJ logo"> 
-		<nav>
+		<nav id="main_nav">
 			<a href="#about">About</a>
 			<a href="#skills">Skills</a>
 			<a href="#photography">Photography</a>
@@ -33,6 +32,12 @@
 		</div>
 	</section>
 	<main>
+		<nav id="mobile_nav">
+			<a href="#about" class="light">About</a>
+			<a href="#skills" class="dark">Skills</a>
+			<a href="#photography" class="light">Photography</a>
+			<a href="#contact" class="dark">Contact</a>
+		</nav>
 		<section id="about">
 			<div>
 				<h2>About Claire</h2>
@@ -60,7 +65,7 @@
 				<a class="fancybox" rel="group" href="images/waterfall_large.jpg" title="view image"><img src="images/waterfall.jpg"></a>
 				<a class="fancybox" rel="group" href="images/lake_1_large.jpg" title="view image"><img src="images/lake_1.jpg"></a>
 				<a class="fancybox" rel="group" href="images/train_tracks_large.jpg" title="view image"><img src="images/train_tracks.jpg"></a>
-				<a class="fancybox" rel="group" href="images/plane_wing_large.jpg" title="view image"><img src="images/plane_wing.jpg"></a>
+				<a class="fancybox" rel="group" href="images/mountains_2_large.jpg" title="view image"><img src="images/mountains_2.jpg"></a>
 				<a class="fancybox" rel="group" href="images/reeds_large.jpg" title="view image"><img src="images/reeds.jpg"></a>
 				<a class="fancybox" rel="group" href="images/peru_waterfall_large.jpg" title="view image"><img src="images/peru_waterfall.jpg"></a>
 				<a class="fancybox" rel="group" href="images/ny_buildings_large.jpg" title="view image"><img src="images/ny_buildings.jpg"></a>
@@ -75,12 +80,11 @@
 			<p><a href="https://au.linkedin.com/in/clairejamesdesign" target="_blank" id="linkedin">Connect on Linkedin</a>
 			<!-- <a href="#" class="cta">contact details...</a> -->
 		</section>
-		<section id="scroll_to_top">
-			<a href="#splash">Scroll to top</a>
-		</section>
 	</main>
 	<footer>
-		<div id="end_space"></div>
+		<a href="#splash" id="scroll_to_top"><img src="images/scroll_to_top.png"></a>
+		<a href="#mobile_nav" id="scroll_to_top_mobile"><img src="images/scroll_to_top.png"></a>
+<!-- 		<div id="end_space"></div> -->
 	</footer>
 	<!-- <nav id="footer_nav">
 		<a href="#">scroll to top</a>
@@ -114,6 +118,16 @@
 		$(document).ready(function() {
 			$(".fancybox").fancybox();
 		});
+	</script>
+	<script type="text/javascript">
+	$(".fancybox")
+    	.attr('rel', 'gallery')
+    	.fancybox({
+       		openEffect : 'none',
+       		helpers : {
+       	    	title : null            
+       		}           
+    	});
 	</script>
 </body>
 </html>
