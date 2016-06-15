@@ -384,4 +384,7 @@ ul.newsticker span {
 	.splash_img {
 		padding-top: 90px;
 	}
+	#contact {
+		width: 100%;
+	}
 }
