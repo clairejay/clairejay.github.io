@@ -22,12 +22,12 @@
 				<a>Blog</a>
 			</div>
 		</nav>
-		<div id="search">
+<!-- 		<div id="search">
 			<form>
                    <input class="search" type="text" placeholder="Search..." required>
                    <input class="button" type="button" value="Search">
 			</form>
-		</div>
+		</div> -->
 	</header>
 	<div id="splash">
 		<img class="splash_img" src="images/banner_top_3.jpg">
@@ -188,11 +188,5 @@ function initialize() {
   var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
 google.maps.event.addDomListener(window, 'load', initialize);
-</script>
-<script type="text/javascript">
-    document.getElementById('frmSearch').onsubmit = function() {
-        window.location = 'http://www.google.com/search?q=site:file:///Users/clairerobson/Documents/CODING/sud_america/WEBSITE/index.html#contact ' + document.getElementById('txtSearch').value;
-        return false;
-    }
 </script>
 </html>
