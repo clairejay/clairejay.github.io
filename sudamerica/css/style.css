@@ -310,6 +310,8 @@ ul.newsticker span {
 	#contact_floats {
 		padding-bottom: 2em;
 	}
+	#social {
+		width: 295px;
 }
 @media only screen and (max-width: 770px) {
 	iframe {
