@@ -399,4 +399,7 @@ ul.newsticker span {
 	#googleMap {
 		display: none;
 	}
+	#social img {
+		width: 50px;
+	}
 }
