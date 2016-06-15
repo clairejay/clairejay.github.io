@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sud America</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/liScroll.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+</head>
+<body>
+	<header>
+		<div id="top_orange">
+			<img src="images/title.png">
+		</div>
+		<nav>
+			<div id="main_nav">
+				<a href="#splash">Home</a>
+				<a href="#squares">Destinations</a>
+				<a href="#video_link">Video</a>
+				<a href="#contact">Contact</a>
+				<a>Blog</a>
+			</div>
+		</nav>
+		<div id="search">
+			<form>
+                   <input class="search" type="text" placeholder="Search..." required>
+                   <input class="button" type="button" value="Search">
+			</form>
+		</div>
+	</header>
+	<div id="splash">
+		<img class="splash_img" src="images/banner_top_3.jpg">
+		<img class="splash_img" src="images/banner_top_1.jpg">
+		<img class="splash_img" src="images/banner_top_2.jpg">
+	</div>
+	<section id="about" class="text_block">
+		<h2>SUD AMERICA</h2>
+		<hr>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</section>
+	<section id="squares">
+		<img src="images/square_1.jpg" alt="mountains" title="HISTORY">
+		<img src="images/square_2.jpg" alt="Peruvian woman" title="CULTURE">
+		<img src="images/square_3.jpg" alt="mud springs" title="NATURE">
+	</section>
+	<section id="destinations">
+		<h2>DESTINATIONS</h2>
+		<hr>
+		<div id="places">
+			<div class="destination_div">
+				<img src="images/square2_1.jpg" alt="llama" title="llama in Peru">
+				<h3>PERU</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+			</div>
+			<div class="destination_div">
+				<img src="images/square2_2.jpg" alt="salt flats" title="salt flats">
+				<h3 id=>BOLIVIA</h3>
+				<p id="video_link">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+			</div>
+			<div class="destination_div">
+				<img src="images/square2_3.jpg" alt="street graffiti" title="street graffiti">
+				<h3>CHILE</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+			</div>
+		</div>
+	</section>
+	<section id="video">
+		<h2>WATCH THE GUIDE</h2>
+		<hr>
+		<iframe width="670" height="470" src="http://www.youtube.com/embed/BY3_7pRHfs0" frameborder="0" allowfullscreen>>
+		</iframe>
+	<section id="contact">
+		<h2>BOOK A TRIP</h2>
+		<hr>
+		<div id="contact_floats">
+			<div id="googleMap" style="width:430px;height:430px;"></div>
+			<div id="contact_info">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+				<p><span class="orange">T: </span> (02) 9900 0000</p>
+				<p><span class="orange">E: </span> <a href="mailto:info@sudamerica.com?Subject=Enquiry">info@sudamerica.com</a></p>
+				<p><span class="orange">A: </span> Sydney St, Sydney</p>
+				<form name=form1 method=post action=>
+				<table border=0 id=form_table>
+				  <tr>
+				    <th width=10%>Name</th>
+				    <td>
+				        <input type=text name=name>
+				    </td>
+				  </tr>
+				  <tr>
+				    <th>Email</th>
+				    <td>
+				    	<input type=text name=email>
+				    </td>
+				  </tr>
+				  <tr>
+				    <th valign=top>Query</th>
+				    <td>
+				    <textarea type=text name=address style=height:80px>
+				    </textarea></td>
+				  </tr>
+				  <tr>
+				    <th> </th>
+				    <td>
+				    <input type=submit name=submit value=Submit Form>
+				    <input type=reset name=reset>
+				    </td>
+				  </tr>
+				</table>
+				</form>
+			</div>
+		</div>
+	</section>
+	<section id="social">
+		<a href="#" id="pinterest" target="_blank"><img src="images/social/pinterest_icon.png" onmouseover="this.src='images/social/pinterest_icon_orange.png'" onmouseout="this.src='images/social/pinterest_icon.png'"></a>
+		<a href="#" id="twitter" target="_blank"><img src="images/social/twitter_icon.png" onmouseover="this.src='images/social/twitter_icon_orange.png'" onmouseout="this.src='images/social/twitter_icon.png'"></a>
+		<a href="#" id="linkedin" target="_blank"><img src="images/social/linkedin_icon.png" onmouseover="this.src='images/social/linkedin_icon_orange.png'" onmouseout="this.src='images/social/linkedin_icon.png'"></a>
+		<a href="#" id="instagram" target="_blank"><img src="images/social/instagram_icon.png" onmouseover="this.src='images/social/instagram_icon_orange.png'" onmouseout="this.src='images/social/instagram_icon.png'"></a>
+		<a href="#" target="_blank"><img src="images/social/facebook_icon.png" onmouseover="this.src='images/social/facebook_icon_orange.png'" onmouseout="this.src='images/social/facebook_icon.png'"></a>
+	</section>
+</body>
+<footer>
+	<div class="tickercontainer">
+		<div class="mask">
+			<ul id="ticker_1" class="newsticker">
+				<li><span>Flight Sale - </span><a href="#">$300 off all flights to Peru and Chile</a></li>
+				<li><span>Boat Expeditions - </span><a href="#">Explore Lake Titicaca by water</a></li>
+				<li><span>Complimentary Insurance - </span><a>Travel insurance provided with all 14+ day tours</a></li>
+				<li><span>Live Like a Local - </span><a>Homestay packages now available</a></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<script>
+		$(function() {
+			$('a[href*=#]:not([href=#])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html,body').animate({
+						scrollTop: target.offset().top
+	        				}, 1000);
+	        				return false;
+	      				}
+					
+				}
+			});
+		});
+	</script>
+<script type="text/javascript">
+	$(function(){
+		$("ul#ticker_1").liScroll();
+	});
+</script>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("splash_img");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 9000);
+}
+</script>
+<script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(-33.86,151.2),
+    zoom:13,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<script type="text/javascript">
+    document.getElementById('frmSearch').onsubmit = function() {
+        window.location = 'http://www.google.com/search?q=site:file:///Users/clairerobson/Documents/CODING/sud_america/WEBSITE/index.html#contact ' + document.getElementById('txtSearch').value;
+        return false;
+    }
+</script>
+</html>
