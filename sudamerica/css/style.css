@@ -95,6 +95,9 @@ nav a {
 .button:hover  {
     background-color:#ff9256;
 }*/
+#splash_2 {
+	display: none;
+}
 .splash_img {
 	width: 100%;
 	padding-top: 140px;
@@ -401,5 +404,17 @@ ul.newsticker span {
 	}
 	#social img {
 		width: 50px;
+	}
+	#splash {
+		display: none;
+	}
+	#splash_2 {
+		display: block;
+		margin-top: 110px;
+		background: url("../images/banner_top_3.jpg");
+		background-size: cover;
+		background-position: center center;
+		text-align: center;
+		height: 80vh;
 	}
 }
